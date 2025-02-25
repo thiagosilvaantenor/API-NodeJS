@@ -1,6 +1,6 @@
 const express = require("express");
 
-const {listarClientes, criarCliente, atualizarCliente, deletarCliente} = require("../controllers");
+const {listarClientes, criarCliente, atualizarCliente, deletarCliente} = require("../controllers/clienteController");
 
 
 const router = express.Router();
