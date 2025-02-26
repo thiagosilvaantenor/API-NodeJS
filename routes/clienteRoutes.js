@@ -8,6 +8,6 @@ const router = express.Router();
 router.get("/", listarClientes);
 router.post("/", criarCliente);
 router.put("/", atualizarCliente);
-router.delete("/", deletarCliente);
+router.delete("/:id", deletarCliente);
 
 module.exports = router;
