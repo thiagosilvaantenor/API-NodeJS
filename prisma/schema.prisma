@@ -23,4 +23,7 @@ model Cliente {
   idade Int? //nova coluna que pode ter conteudo vazio.
   createdAt DateTime @default(now()) // Criado em, gerado automaticamente
   sexo String?//como ja existem dados inseridos antes da criacao do campo, ele deve ser opicional
+  cpf String?
+  dtNasc DateTime?
 }
+
