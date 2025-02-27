@@ -49,7 +49,7 @@
 # Status do projeto
 🚧Em construção🚧
 
-a porta padrão esta em `3000`, para alterar basta alterar a variavel PORT em server.js
+⚠️A porta padrão esta em `3000`, para alterar basta alterar a variavel PORT em server.js ⚠️
 
 Funcionalidades prontas:
 - Listar Clientes:
