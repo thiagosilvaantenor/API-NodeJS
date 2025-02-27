@@ -49,9 +49,9 @@
 # Status do projeto
 🚧Em construção🚧
 
-⚠️A porta padrão esta em `3000`, para alterar basta alterar a variavel PORT em server.js ⚠️
-⚠️Caso queira baixar e testar o projeto, apos baixado utilizar o comando: `npm install` para instalar as dependências <br>
-Para rodar utilizar um dos seguintes comandos: `node server.js` ou `nodemon server.js`⚠️
+⚠️A porta padrão esta em `3000`, para alterar basta alterar a variavel PORT em server.js ⚠️<br>
+⚠️Caso queira baixar e testar o projeto, apos baixado utilizar o comando: `npm install` para instalar as dependências⚠️<br>
+⚠️Para rodar utilizar um dos seguintes comandos: `node server.js` ou `nodemon server.js`⚠️
 
 Funcionalidades prontas:
 - Listar Clientes:
