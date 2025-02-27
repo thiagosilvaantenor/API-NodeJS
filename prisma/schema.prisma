@@ -20,4 +20,6 @@ model Cliente {
   telefone String
   email String @unique
   endereco String
+  idade Int? //nova coluna que pode ter conteudo vazio.
+  createdAt DateTime @default(now()) // Criado em, gerado automaticamente
 }
