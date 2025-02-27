@@ -50,6 +50,8 @@
 🚧Em construção🚧
 
 ⚠️A porta padrão esta em `3000`, para alterar basta alterar a variavel PORT em server.js ⚠️
+⚠️Caso queira baixar e testar o projeto, apos baixado utilizar o comando: `npm install` para instalar as dependências <br>
+Para rodar utilizar um dos seguintes comandos: `node server.js` ou `nodemon server.js`⚠️
 
 Funcionalidades prontas:
 - Listar Clientes:
@@ -60,7 +62,8 @@ Funcionalidades prontas:
                nome,
                telefone,
                email,
-               endereco
+               endereco,
+               idade
             }`    
 - Atualizar Cliente:
   - POST `localhost:${PORT}/clientes/${id}`
@@ -68,13 +71,15 @@ Funcionalidades prontas:
                nome,
                telefone,
                email,
-               endereco
+               endereco,
+               idade
             }`
 
 - Deletar Cliente:
   - DELETE `localhost:${PORT}/clientes/${id}`
+    
 ## Agradecimentos
-Agradeço ao professor: <strong>Thiago</strong>, do curso de desenvolvimento em ReactJS do AvançaTech.
+Agradeço ao professor <a href="https://github.com/tvm-dev" target="_blank"><strong>Thiago Viana</strong> </a>, do curso de desenvolvimento em ReactJS do AvançaTech e toda a equipe do Centro Cultural Cidade Tiradentes.
 
 ## Autor
 
