@@ -15,10 +15,10 @@ exports.listarClientes = async (req, res) => {
 // ========= ==================== =================
 exports.criarCliente = async (req, res) => {
     try {
-        const { nome, telefone, email, endereco, idade } = req.body;
+        const { nome, telefone, email, endereco, idade, sexo } = req.body;
         const novoCliente = await prisma.cliente.create({
             data: {
-                nome, telefone, email, endereco, idade
+                nome, telefone, email, endereco, idade, sexo
             },
         });
         res.status(201).json(novoCliente);
@@ -30,10 +30,10 @@ exports.criarCliente = async (req, res) => {
 exports.atualizarCliente = async (req, res) => {
     try {
         const { id } = req.params;
-        const { nome, telefone, email, endereco, idade } = req.body;
+        const { nome, telefone, email, endereco, idade, sexo } = req.body;
         const clienteAtualizado = await prisma.cliente.update({
             where: { id },
-            data : { nome, telefone, email, endereco, idade }
+            data : { nome, telefone, email, endereco, idade, sexo }
         });
         res.json(clienteAtualizado);
     } catch (error) {
