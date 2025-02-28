@@ -1,6 +1,5 @@
 # API Node JS
 
-
 <div align="center">
   
 `API de cadastro de clientes em Node JS, criada no curso de Desenvolvedor ReactJS do AvançaTech`
@@ -14,9 +13,8 @@
 ## Índice
 =================
 <!--ts-->
-* [Título](#API--Node-JS)
+* [Título](#api--node-js)
 * [Índice](#índice)
-* [Proposta do projeto](#proposta-do-projeto)
 * [Tecnologias](#tecnologias)
 * [Status do projeto](#status-do-projeto)
 * [Agradecimentos](#agradecimentos)
@@ -24,6 +22,7 @@
 <!--te-->
 
 # Tecnologias
+
 - Linguagem
   - [Javascript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
   - [Node JS](https://nodejs.org)
@@ -38,22 +37,29 @@
 
 ## Tabelas do Banco de dados
 - Cliente
-  - `id TEXT @UUID`
-  - `nome TEXT`
-  - `telefone TEXT`
-  - `email TEXT  @unique`
-  - `endereco TEXT`
-  - `idade Int @NULL`
-  - `createdAt DateTime @default(now())`
+  - `id TEXT DEFAULT(UUID())`
+  - `nome TEXT NOTNULL`
+  - `telefone TEXT NOTNULL`
+  - `email TEXT  UNIQUE NOTNULL`
+  - `endereco TEXT NOTNULL`
+  - `idade Int NULL`
+  - `createdAt DateTime DEFAULT(NOW())`
+  - `sexo String NULL`
+  - `cpf String NULL`
+ 
+- Compra
+  - `id TEXT DEFAULT(UUID())`
+  - `nomeProduto TEXT NOTNULL`
+  - `valor DECIMAL NOTNULL`
+  - `DtCompra DateTime DEFAULT(NOW())`
 
 # Status do projeto
 🚧Em construção🚧
 
-⚠️A porta padrão esta em `3000`, para alterar basta alterar a variavel PORT em server.js ⚠️<br>
-⚠️Caso queira baixar e testar o projeto, apos baixado utilizar o comando: `npm install` para instalar as dependências⚠️<br>
-⚠️Para rodar utilizar um dos seguintes comandos: `node server.js` ou `nodemon server.js`⚠️
-
 Funcionalidades prontas:
+
+<h3>Rota Cliente</h3>
+
 - Listar Clientes:
 -   GET: `localhost:${PORT}/clientes`
 - Cadastrar Cliente:
@@ -63,7 +69,9 @@ Funcionalidades prontas:
                telefone,
                email,
                endereco,
-               idade
+               idade,
+               sexo,
+               cpf
             }`    
 - Atualizar Cliente:
   - POST `localhost:${PORT}/clientes/${id}`
@@ -72,11 +80,39 @@ Funcionalidades prontas:
                telefone,
                email,
                endereco,
-               idade
+               idade,
+               sexo,
+               cpf
             }`
 
 - Deletar Cliente:
   - DELETE `localhost:${PORT}/clientes/${id}`
+ 
+<h3>Rota Compra</h3>
+
+- Listar Compras:
+-   GET: `localhost:${PORT}/compras`
+- Cadastrar Compras:
+-   POST: `localhost:${PORT}/compras/`
+  - body: `{
+               nomeProduto,
+               valor
+            }`    
+- Atualizar Compra:
+  - POST `localhost:${PORT}/compras/${id}`
+    - body: `{
+               nomeProduto,
+               valor
+            }`
+
+- Deletar Cliente:
+  - DELETE `localhost:${PORT}/compras/${id}`
+
+<h3> Informações Adicionais </h3>
+
+⚠️A porta padrão esta em `3000`, para alterar basta alterar a variavel PORT em server.js ⚠️<br>
+⚠️Caso queira baixar e testar o projeto é necesário ter o NodeJS instalado, após baixado o projeto utilizar o comando: `npm install` para instalar as dependências⚠️<br>
+⚠️Para rodar utilizar um dos seguintes comandos: `node server.js` ou `nodemon server.js`⚠️
     
 ## Agradecimentos
 Agradeço ao professor <a href="https://github.com/tvm-dev" target="_blank"><strong>Thiago Viana</strong> </a>, do curso de desenvolvimento em ReactJS do AvançaTech e toda a equipe do Centro Cultural Cidade Tiradentes.
