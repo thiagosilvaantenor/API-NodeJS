@@ -13,17 +13,21 @@ datasource db {
   url      = "file:./dev.db"
 }
 
-
 model Cliente {
-  id String @id @default(uuid())
-  nome String
-  telefone String
-  email String @unique
-  endereco String
-  idade Int? //nova coluna que pode ter conteudo vazio.
-  createdAt DateTime @default(now()) // Criado em, gerado automaticamente
-  sexo String?//como ja existem dados inseridos antes da criacao do campo, ele deve ser opicional
-  cpf String?
-  dtNasc DateTime?
+  id        String    @id @default(uuid())
+  nome      String
+  telefone  String
+  email     String    @unique
+  endereco  String
+  idade     Int? //nova coluna que pode ter conteudo vazio.
+  createdAt DateTime  @default(now()) // Criado em, gerado automaticamente
+  sexo      String? //como ja existem dados inseridos antes da criacao do campo, ele deve ser opicional
+  cpf       String?
 }
 
+model Compra {
+  id    String @id @default(uuid())
+  nomeProduto String
+  valor Decimal
+  dtCompra DateTime @default(now())
+}

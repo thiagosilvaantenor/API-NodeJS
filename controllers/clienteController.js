@@ -4,12 +4,8 @@ const prisma = new PrismaClient();
 //req = requisiçao, res = resposta
 //========= ============= ============ =============
 exports.listarClientes = async (req, res) => {
-    try{
-        const clientes = await prisma.cliente.findMany();
-        res.json(clientes);
-    } catch(error) {
-        res.status(400).json({error: "Erro ao listar clientes"})
-    }
+    const clientes = await prisma.cliente.findMany();
+    res.json(clientes);
 };
 
 // ========= ==================== =================
@@ -33,7 +29,7 @@ exports.atualizarCliente = async (req, res) => {
         const { nome, telefone, email, endereco, idade, sexo, cpf, dtNasc } = req.body;
         const clienteAtualizado = await prisma.cliente.update({
             where: { id },
-            data : { nome, telefone, email, endereco, idade, sexo, dtNasc }
+            data : { nome, telefone, email, endereco, idade, sexo, cpf, dtNasc }
         });
         res.json(clienteAtualizado);
     } catch (error) {
