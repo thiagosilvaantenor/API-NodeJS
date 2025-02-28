@@ -2,11 +2,16 @@
 
 <div align="center">
   
-`API de cadastro de clientes em Node JS, criada no curso de Desenvolvedor ReactJS do AvançaTech`
-  
-![NodeJS](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)
+  `API de cadastro de clientes e compras em Node JS, criada no curso de Desenvolvedor ReactJS do AvançaTech`
 
-![NodeJS](https://img.shields.io/badge/SQLite-07405E?style=for-the-badge&logo=sqlite&logoColor=white)
+  <img src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white" />
+
+  <img  alt="Badge SQLite" src="https://img.shields.io/badge/SQLite-07405E?style=for-the-badge&logo=sqlite&logoColor=white" />
+
+  <img  alt="Badge Prisma" src="https://img.shields.io/badge/Prisma-3982CE?style=for-the-badge&logo=Prisma&logoColor=white" />
+
+  <img  alt="Badge Express" src="https://img.shields.io/badge/Express.js-404D59?style=for-the-badge" />
+
 
 </div>
 
@@ -120,14 +125,14 @@ Agradeço ao professor <a href="https://github.com/tvm-dev" target="_blank"><str
 ## Autor
 
 <div align="center">
-<a href="https://www.linkedin.com/in/thiago-antenor/">
-<img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/99970279?v=4" width="100px;" alt="foto do autor"/>
- <br />
- <sub><b>Thiago Silva Antenor</b></sub></a> <a href="https://www.linkedin.com/in/thiago-antenor/" title="Linkedin"> 🧑🏾‍💻</a>
-
-
-Feito por Thiago Silva Antenor 👨🏾‍💻 Entre em contato!
-
-[![Linkedin Badge](https://img.shields.io/badge/-Thiago-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/thiago-antenor/)](https://www.linkedin.com/in/thiago-antenor/) 
-[![Gmail Badge](https://img.shields.io/badge/-thiagoantenor31@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:thiagoantenor31.com)](mailto:thiagoantenor31.com)
+  <a href="https://www.linkedin.com/in/thiago-antenor/">
+  <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/99970279?v=4" width="100px;" alt="foto do autor"/>
+   <br />
+   <sub><b>Thiago Silva Antenor</b></sub></a> <a href="https://www.linkedin.com/in/thiago-antenor/" title="Linkedin"> 🧑🏾‍💻</a>
+  
+  
+  Feito por Thiago Silva Antenor 👨🏾‍💻 Entre em contato!
+  
+  [![Linkedin Badge](https://img.shields.io/badge/-Thiago-blue?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/thiago-antenor/)](https://www.linkedin.com/in/thiago-antenor/) 
+  [![Gmail Badge](https://img.shields.io/badge/-thiagoantenor31@gmail.com-c14438?style=flat-square&logo=Gmail&logoColor=white&link=mailto:thiagoantenor31.com)](mailto:thiagoantenor31.com)
 </div>
