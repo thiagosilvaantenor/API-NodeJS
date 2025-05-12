@@ -59,7 +59,7 @@
   - `DtCompra DateTime DEFAULT(NOW())`
 
 # Status do projeto
-🚧Em construção🚧
+✅Concluido✅
 
 Funcionalidades prontas:
 
